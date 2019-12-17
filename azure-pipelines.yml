@@ -50,6 +50,7 @@ stages:
         artifact: 'app'
         publishLocation: 'pipeline'
       displayName: 'Publish artifact'
+      
 - template: templates/deploy.yml
   parameters:
     deployment: 'DeployDevelopment'
