@@ -33,7 +33,7 @@ stages:
             # Deploy application to chosen environment.
             displayName: ${{ parameters.displayName }}
             inputs:
-              azureSubscription: '$(ConnectedServiceName)'
+              azureSubscription: '$(ConnectToServiceName)'
               appType: ${{ parameters.webAppType }}
               WebAppName: ${{ parameters.webAppName }}
               packageForLinux: '$(Pipeline.Workspace)/app/s'
